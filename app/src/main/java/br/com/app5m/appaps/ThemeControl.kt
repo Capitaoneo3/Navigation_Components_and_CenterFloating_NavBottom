@@ -14,7 +14,7 @@ open class ThemeControl : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         sharedPreferences = getSharedPreferences("night", 0)
-        val booleanValue = sharedPreferences?.getBoolean("night_mode", false)
+        val booleanValue = sharedPreferences?.getBoolean("night_mode", true)
 
         if (booleanValue == true) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
