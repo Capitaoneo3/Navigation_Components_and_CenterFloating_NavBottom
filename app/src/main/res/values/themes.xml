@@ -6,4 +6,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@android:color/white</item>
     </style>
+
+    <style name="button" >
+        <item name="rippleColor">@color/white</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:minHeight">50dp</item>
+    </style>
 </resources>

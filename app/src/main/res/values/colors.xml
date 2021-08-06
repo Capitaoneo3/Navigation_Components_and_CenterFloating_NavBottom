@@ -17,6 +17,12 @@
     <color name="navBarBackgroundMiddle">#ABB2C6</color>
     <color name="navBarBackgroundButton">#D0D4DF</color>
 
+    <!--INTRO-->
+    <color name="introButtonNext">#FFFFFF</color>
+    <color name="introButtonNextRipple">#009688</color>
+    <color name="introButtonGetStartedRipple">#009688</color>
+    <color name="introButtonNextIcon">#000000</color>
+
     <!--NAV BAR  -->
     <color name="buttonHomeNavBar">#0F49A3</color>
     <color name="iconNotifyHomeNavBar">@color/buttonHomeNavBar</color>
