@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/GeneralNoTitle">
         <activity
-            android:name=".ui.activity.fragment.Intro_containerAct"
-            android:exported="true" />
+            android:name=".ui.activity.fragment.IntroContainerFrag"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,9 +1,10 @@
-package br.com.app5m.appaps
+package br.com.app5m.appaps.helper
 
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import br.com.app5m.appaps.R
 
 open class ThemeControl : AppCompatActivity() {
 
