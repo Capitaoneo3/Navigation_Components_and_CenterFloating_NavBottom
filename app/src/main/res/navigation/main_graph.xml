@@ -18,5 +18,14 @@
         android:id="@+id/introFrag"
         android:name="br.com.app5m.appaps.ui.activity.fragment.IntroContainerFrag"
         android:label="fragment_intro"
-        tools:layout="@layout/fragment_intro_container" />
+        tools:layout="@layout/fragment_intro_container" >
+        <action
+            android:id="@+id/action_introFrag_to_siginInFrag"
+            app:destination="@id/siginInFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/siginInFrag"
+        android:name="br.com.app5m.appaps.ui.fragment.SiginInFrag"
+        android:label="fragment_sigin_in"
+        tools:layout="@layout/fragment_sigin_in" />
 </navigation>

@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageButton
-        android:id="@+id/button"
+        android:id="@+id/next_intro_bt"
         style="@style/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,17 +32,19 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/textView"
+        android:id="@+id/skip_intro_bt"
+        style="@style/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:background="#009A7878"
         android:text="Get started"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:backgroundTint="#009A7878"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/next_intro_bt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/next_intro_bt"
         app:rippleColor="@color/introButtonGetStartedRipple" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

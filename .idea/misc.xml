@@ -5,14 +5,22 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2328125" />
         <entry key="app/src/main/res/drawable/bg_intro_button_next.xml" value="0.2328125" />
+        <entry key="app/src/main/res/drawable/button_icon_rounded_bg.xml" value="0.14703947368421053" />
         <entry key="app/src/main/res/drawable/ic_arrow6x12.xml" value="0.2328125" />
+        <entry key="app/src/main/res/drawable/ic_facebook2.xml" value="0.14703947368421053" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2328125" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14703947368421053" />
+        <entry key="app/src/main/res/font/abel.xml" value="0.15592105263157896" />
         <entry key="app/src/main/res/layout/activity_intro_container.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_frist.xml" value="0.32916666666666666" />
         <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.1852355072463768" />
-        <entry key="app/src/main/res/layout/fragment_intro1.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/fragment_intro1.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/fragment_intro2.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/fragment_intro_container.xml" value="0.1368421052631579" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_sigin_in.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.12" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_teste.xml" value="0.32916666666666666" />
         <entry key="app/src/main/res/layout/intro_layer.xml" value="0.18206521739130435" />

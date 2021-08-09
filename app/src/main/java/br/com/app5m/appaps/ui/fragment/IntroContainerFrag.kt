@@ -8,9 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import br.com.app5m.appaps.R
-import kotlinx.android.synthetic.main.fragment_intro.*
+import br.com.app5m.appaps.ui.fragment.Intro1Frag
+import br.com.app5m.appaps.ui.fragment.Intro2Frag
+import kotlinx.android.synthetic.main.fragment_intro_container.*
 
 class IntroContainerFrag : Fragment() {
 
@@ -32,16 +35,14 @@ class IntroContainerFrag : Fragment() {
     ) {
         override fun getItem(position: Int): Fragment {
             return when (position) {
-                0 -> MultiIntroFrag()
-                1 -> MultiIntroFrag()
-                2 -> MultiIntroFrag()
-                else -> MultiIntroFrag()
+                0 -> Intro1Frag()
+                else -> Intro2Frag()
             }
         }
 
         override fun getCount(): Int {
             // Show 3 total pages.
-            return 4
+            return 2
         }
     }
     private fun configInitialViews(){
@@ -49,17 +50,15 @@ class IntroContainerFrag : Fragment() {
 
         pagerView.adapter = adapter
 
-        introIndicator.setViewPager(pagerView)
 
         pagerView.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
 
-                if (position == 3) {
+                if (position == 1) {
                     next_intro_bt.setOnClickListener {
 
-                        startActivity(
-                            Intent(this@IntroContainerAct,
-                            AuthContainerAct::class.java).putExtra("key", intent.extras!!.getInt("key")))
+                            val navController = findNavController()
+                            navController.navigate(R.id.siginInFrag)
 
                     }
                 } else {
@@ -84,11 +83,8 @@ class IntroContainerFrag : Fragment() {
 
         skip_intro_bt.setOnClickListener {
 
-
-            startActivity(Intent(this@IntroContainerAct,
-                AuthContainerAct::class.java).putExtra("key", 0))
-
-            finishAffinity()
+            val navController = findNavController()
+            navController.navigate(R.id.siginInFrag)
 
         }
 
