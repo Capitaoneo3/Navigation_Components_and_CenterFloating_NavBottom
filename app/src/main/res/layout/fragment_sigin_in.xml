@@ -9,7 +9,6 @@ tools:context=".ui.fragment.SiginInFrag"
     >
 
 
-
     <TextView
         android:id="@+id/textView5"
         style="@style/fontTitleIntro"
@@ -21,83 +20,80 @@ tools:context=".ui.fragment.SiginInFrag"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/buttonWithIcon"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="36dp"
-        android:backgroundTint="#4869D4"
-        android:fontFamily="@font/inter_medium"
-        android:padding="16dp"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
-        android:text="Continue com Facebook"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:icon="@drawable/ic_facebook"
-        app:iconGravity="textStart"
-        app:iconPadding="24dp"
-        app:iconTint="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/buttonWithIcon"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#EB4132"
-        android:text="Continue Com Google"
-        app:icon="@drawable/ic_google"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        <Button
+            android:id="@+id/button"
+            style="@style/buttonWithIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4869D4"
+            android:fontFamily="@font/inter_medium"
+            android:padding="16dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="Continue com Facebook"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_facebook"
+            app:iconGravity="textStart"
+            app:iconPadding="24dp"
+            app:iconTint="#FFFFFF" />
 
-    <Button
-        android:id="@+id/button3"
-        style="@style/buttonNoBg"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Cadastre-se usando email"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:strokeColor="#256CFE" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/buttonWithIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EB4132"
+            android:text="Continue com Google"
+            app:icon="@drawable/ic_google" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="104dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3">
+        <Button
+            android:id="@+id/button3"
+            style="@style/buttonNoBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cadastre-se usando email"
+            app:strokeColor="#256CFE" />
 
-        <TextView
-            android:id="@+id/textView6"
-            style="@style/fontBodyIntroSub"
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Você já possui cadastro?" />
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="104dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView7"
-            style="@style/fontBodyIntroSub"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_weight="1"
-            android:text="Conecte-se "
-            android:textColor="#256CFE" />
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/fontBodyIntroSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Você já possui cadastro?" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/fontBodyIntroSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="Conecte-se "
+                android:textColor="#256CFE" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
