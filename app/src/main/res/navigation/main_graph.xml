@@ -12,7 +12,10 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFrag_to_introFrag"
-            app:destination="@id/introFrag" />
+            app:destination="@id/introFrag"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:launchSingleTop="false" />
     </fragment>
     <fragment
         android:id="@+id/introFrag"
@@ -21,11 +24,24 @@
         tools:layout="@layout/fragment_intro_container" >
         <action
             android:id="@+id/action_introFrag_to_siginInFrag"
-            app:destination="@id/siginInFrag" />
+            app:destination="@id/siginInFrag"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/siginInFrag"
         android:name="br.com.app5m.appaps.ui.fragment.SiginInFrag"
         android:label="fragment_sigin_in"
-        tools:layout="@layout/fragment_sigin_in" />
+        tools:layout="@layout/fragment_sigin_in" >
+        <action
+            android:id="@+id/action_siginInFrag_to_signUpFrag"
+            app:destination="@id/signUpFrag"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFrag"
+        android:name="br.com.app5m.appaps.ui.fragment.SignUpFrag"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>

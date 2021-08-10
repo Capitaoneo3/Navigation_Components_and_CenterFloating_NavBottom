@@ -2,7 +2,7 @@
 <resources
     xmlns:tools="http://schemas.android.com/tools"
     >
-    <color name="colorPrimary">#00796B</color>
+    <color name="colorPrimary">#7EECCB</color>
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="textColor">#000000</color>
@@ -29,8 +29,10 @@
     <color name="buttonHomeNavBar">#0F49A3</color>
     <color name="iconNotifyHomeNavBar">@color/buttonHomeNavBar</color>
     <color name="iconTintHomeNavBar">#FFFFFF</color>
-    <!---->
+    <!--DEFAULT-->
+    <!--line textinput-->
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#797A7D</color>
+
     <!-- RED PALETTE -->
     <color name="red50">#FFEBEE</color>
     <color name="red100">#FFCDD2</color>

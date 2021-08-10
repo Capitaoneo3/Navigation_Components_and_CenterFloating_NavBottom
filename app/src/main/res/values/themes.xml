@@ -57,5 +57,9 @@
     </style>
     <style name="textInputSignUp" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+
+
     </style>
+
 </resources>

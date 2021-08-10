@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import br.com.app5m.appaps.R
@@ -16,6 +17,9 @@ import br.com.app5m.appaps.ui.fragment.Intro2Frag
 import kotlinx.android.synthetic.main.fragment_intro_container.*
 
 class IntroContainerFrag : Fragment() {
+
+    var navigation = view?.let { Navigation.findNavController(it) }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,7 +30,7 @@ class IntroContainerFrag : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        navigation = Navigation.findNavController(view)
         configInitialViews()
 
     }
@@ -57,8 +61,7 @@ class IntroContainerFrag : Fragment() {
                 if (position == 1) {
                     next_intro_bt.setOnClickListener {
 
-                            val navController = findNavController()
-                            navController.navigate(R.id.siginInFrag)
+                        navigation?.navigate(R.id.action_introFrag_to_siginInFrag)
 
                     }
                 } else {
@@ -83,8 +86,8 @@ class IntroContainerFrag : Fragment() {
 
         skip_intro_bt.setOnClickListener {
 
-            val navController = findNavController()
-            navController.navigate(R.id.siginInFrag)
+            navigation?.navigate(R.id.action_introFrag_to_siginInFrag)
+
 
         }
 
