@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import br.com.app5m.appaps.R
 import kotlinx.android.synthetic.main.fragment_sigin_in.*
 
 
 class SiginInFrag : Fragment() {
+    var navigation = view?.let { Navigation.findNavController(it) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,8 +25,8 @@ class SiginInFrag : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         siginUp_email_bt.setOnClickListener {
-            val navController = findNavController()
-            navController.navigate(R.id.signUpFrag)
+             navigation = Navigation.findNavController(view)
+            navigation?.navigate(R.id.action_siginInFrag_to_signUpFrag)
         }
     }
 

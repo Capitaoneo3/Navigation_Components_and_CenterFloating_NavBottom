@@ -21,6 +21,7 @@
 
     <!--INTRO-->
     <color name="introButtonNext">#FFFFFF</color>
+    <color name="siginInButton">#0F49A3</color>
     <color name="introButtonNextRipple">#009688</color>
     <color name="introButtonGetStartedRipple">#009688</color>
     <color name="introButtonNextIcon">#000000</color>

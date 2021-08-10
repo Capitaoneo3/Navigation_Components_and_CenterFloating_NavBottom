@@ -37,12 +37,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="36dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="24dp"
             android:orientation="vertical">
 
             <TextView
@@ -147,13 +147,31 @@
                     android:layout_height="wrap_content"
                     android:background="#006C6C6C"
                     android:ems="10"
-                    android:inputType="textPassword"
 
-                    />
+                    android:inputType="textPassword" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/siginUp_bt"
+            style="@style/bt16FontS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/siginInButton"
+            android:text="Criar a conta" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/fontBodyIntroSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxLength="200"
+            android:text="@string/termsShort"
+            android:textAlignment="center" />
 
     </LinearLayout>
 

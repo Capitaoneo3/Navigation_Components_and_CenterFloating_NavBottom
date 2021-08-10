@@ -1,6 +1,5 @@
 package br.com.app5m.appaps.ui.activity.fragment
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import br.com.app5m.appaps.R
 import br.com.app5m.appaps.ui.fragment.Intro1Frag
@@ -19,6 +17,7 @@ import kotlinx.android.synthetic.main.fragment_intro_container.*
 class IntroContainerFrag : Fragment() {
 
     var navigation = view?.let { Navigation.findNavController(it) }
+    val me: Fragment = this
 
 
     override fun onCreateView(
@@ -45,7 +44,7 @@ class IntroContainerFrag : Fragment() {
         }
 
         override fun getCount(): Int {
-            // Show 3 total pages.
+            // Show 2 total pages.
             return 2
         }
     }
@@ -85,11 +84,9 @@ class IntroContainerFrag : Fragment() {
         }
 
         skip_intro_bt.setOnClickListener {
-
             navigation?.navigate(R.id.action_introFrag_to_siginInFrag)
-
-
         }
 
     }
+
 }

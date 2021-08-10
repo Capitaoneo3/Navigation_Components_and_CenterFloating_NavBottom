@@ -12,7 +12,7 @@
         <item name="android:minWidth">50dp</item>
         <item name="android:minHeight">50dp</item>
     </style>
-    <style name="buttonWithIcon" parent="button">
+    <style name="btWithIcon16FontM" parent="button">
         <item name="android:backgroundTint">#4869D4</item>
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:padding">16dp</item>
@@ -25,6 +25,7 @@
         <item name="iconPadding">24dp</item>
         <item name="iconTint">#FFFFFF</item>
     </style>
+
     <style name="buttonNoBg" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:padding">16dp</item>
@@ -61,5 +62,7 @@
 
 
     </style>
-
+    <style name="bt16FontS" parent="btWithIcon16FontM">
+        <item name="android:fontFamily">@font/inter_light</item>
+    </style>
 </resources>
