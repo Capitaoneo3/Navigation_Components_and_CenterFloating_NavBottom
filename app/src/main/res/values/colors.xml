@@ -27,10 +27,10 @@
     <color name="introButtonNextIcon">#000000</color>
     <color name="titleFields">#797A7D</color>
 
-    <!--NAV BAR  -->
-    <color name="buttonHomeNavBar">#0F49A3</color>
-    <color name="iconNotifyHomeNavBar">@color/buttonHomeNavBar</color>
-    <color name="iconTintHomeNavBar">#FFFFFF</color>
+    <!--BOTTOM  NAV FRAG-->
+    <color name="bottomNavBar">#0F49A3</color>
+    <color name="iconNotifyBottomNavBar">@color/bottomNavBar</color>
+    <color name="iconTintBottomNavBar">#FFFFFF</color>
     <!--DIVIDER-->
     <color name="divider1">#797A7D</color>
     <color name="divider2">#000000</color>

@@ -99,9 +99,9 @@
     </fragment>
     <fragment
         android:id="@+id/navBarFrag"
-        android:name="br.com.app5m.appaps.ui.fragment.NavBarFrag"
+        android:name="br.com.app5m.appaps.ui.fragment.BottomNavFragment"
         android:label="fragment_navbar"
-        tools:layout="@layout/fragment_navbar" />
+        tools:layout="@layout/fragment_bottom_nav" />
     <fragment
         android:id="@+id/loginFrag"
         android:name="br.com.app5m.appaps.ui.fragment.LoginFrag"

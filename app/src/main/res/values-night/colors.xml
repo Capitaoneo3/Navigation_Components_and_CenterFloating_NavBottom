@@ -20,9 +20,9 @@
     <color name="navBarBackgroundButton">#1D2232</color>
 
     <!--NAV BAR  -->
-    <color name="buttonHomeNavBar">#0F49A3</color>
-    <color name="iconNotifyHomeNavBar">@color/buttonHomeNavBar</color>
-    <color name="iconTintHomeNavBar">#FFFFFF</color>
+    <color name="bottomNavBar">#0F49A3</color>
+    <color name="iconNotifyBottomNavBar">@color/bottomNavBar</color>
+    <color name="iconTintBottomNavBar">#FFFFFF</color>
 
     <!-- RED PALETTE -->
     <color name="red50">#FFEBEE</color>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.NavBarFrag">
+    android:background="@color/background"
+    tools:context=".ui.fragment.BottomNavFragment">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="0dp"
@@ -38,7 +39,7 @@
                 android:background="@android:color/transparent"
                 android:outlineAmbientShadowColor="@android:color/transparent"
                 android:outlineSpotShadowColor="@android:color/transparent"
-                app:itemIconTint="@color/white"
+                app:itemIconTint="@color/iconTintBottomNavBar"
                 app:itemRippleColor="@color/white"
                 app:labelVisibilityMode="unlabeled"
                 app:menu="@menu/bottom_nav_menu" />
@@ -51,7 +52,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_home"
-            app:backgroundTint="@color/buttonHomeNavBar"
+            app:backgroundTint="@color/bottomNavBar"
             app:layout_anchor="@id/bottomAppBar"
             app:rippleColor="@color/white"
             app:tint="@color/white" />

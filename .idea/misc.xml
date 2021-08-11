@@ -26,6 +26,7 @@
         <entry key="app/src/main/res/layout/activity_intro_container.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/adapter_sellers.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_bottom_nav.xml" value="0.17" />
         <entry key="app/src/main/res/layout/fragment_frist.xml" value="0.32916666666666666" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.1852355072463768" />
