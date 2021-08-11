@@ -15,7 +15,9 @@
             app:destination="@id/introFrag"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out"
-            app:launchSingleTop="false" />
+            app:launchSingleTop="false"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/introFrag"
@@ -25,8 +27,10 @@
         <action
             android:id="@+id/action_introFrag_to_siginInFrag"
             app:destination="@id/siginInFrag"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/siginInFrag"
@@ -36,8 +40,10 @@
         <action
             android:id="@+id/action_siginInFrag_to_signUpFrag"
             app:destination="@id/signUpFrag"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/signUpFrag"
@@ -47,12 +53,27 @@
         <action
             android:id="@+id/action_signUpFrag_to_phoneValidation1Frag"
             app:destination="@id/phoneValidation1Frag"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/phoneValidation1Frag"
         android:name="br.com.app5m.appaps.ui.fragment.PhoneValidation1Frag"
         android:label="fragment_phone_validation1"
-        tools:layout="@layout/fragment_phone_validation1" />
+        tools:layout="@layout/fragment_phone_validation1" >
+        <action
+            android:id="@+id/action_phoneValidation1Frag_to_phoneValidation2Frag"
+            app:destination="@id/phoneValidation2Frag"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneValidation2Frag"
+        android:name="br.com.app5m.appaps.ui.fragment.PhoneValidation2Frag"
+        android:label="fragment_phone_validation2"
+        tools:layout="@layout/fragment_phone_validation2" />
 </navigation>

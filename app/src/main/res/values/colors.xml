@@ -21,15 +21,19 @@
 
     <!--INTRO-->
     <color name="introButtonNext">#FFFFFF</color>
-    <color name="siginInButton">#0F49A3</color>
+    <color name="buttonDefault1">#0F49A3</color>
     <color name="introButtonNextRipple">#009688</color>
     <color name="introButtonGetStartedRipple">#009688</color>
     <color name="introButtonNextIcon">#000000</color>
+    <color name="titleFields">#797A7D</color>
 
     <!--NAV BAR  -->
     <color name="buttonHomeNavBar">#0F49A3</color>
     <color name="iconNotifyHomeNavBar">@color/buttonHomeNavBar</color>
     <color name="iconTintHomeNavBar">#FFFFFF</color>
+    <!--DIVIDER-->
+    <color name="divider1">#797A7D</color>
+
     <!--DEFAULT-->
     <!--line textinput-->
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#797A7D</color>

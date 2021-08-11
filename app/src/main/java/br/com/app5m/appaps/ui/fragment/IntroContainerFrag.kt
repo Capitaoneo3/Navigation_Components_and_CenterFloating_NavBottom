@@ -39,13 +39,14 @@ class IntroContainerFrag : Fragment() {
         override fun getItem(position: Int): Fragment {
             return when (position) {
                 0 -> Intro1Frag()
-                else -> Intro2Frag()
+                1 -> Intro2Frag()
+                else -> Intro1Frag()
             }
         }
 
         override fun getCount(): Int {
             // Show 2 total pages.
-            return 2
+            return 3
         }
     }
     private fun configInitialViews(){
@@ -57,7 +58,7 @@ class IntroContainerFrag : Fragment() {
         pagerView.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
 
-                if (position == 1) {
+                if (position == 2) {
                     next_intro_bt.setOnClickListener {
 
                         navigation?.navigate(R.id.action_introFrag_to_siginInFrag)
