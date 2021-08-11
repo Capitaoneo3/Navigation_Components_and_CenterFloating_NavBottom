@@ -70,8 +70,9 @@ class IntroContainerFrag : Fragment() {
                     }
                 }
             }
+            override fun onPageSelected(position: Int) {
 
-            override fun onPageSelected(position: Int) {}
+            }
             override fun onPageScrollStateChanged(state: Int) {}
         })
 
@@ -90,4 +91,9 @@ class IntroContainerFrag : Fragment() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        pagerView.currentItem = 0
+
+    }
 }
