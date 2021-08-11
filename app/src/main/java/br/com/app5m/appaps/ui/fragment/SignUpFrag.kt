@@ -25,8 +25,8 @@ class SignUpFrag : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var navigation = Navigation.findNavController(view)
 
-        siginUp_bt.setOnClickListener {
-            navigation?.navigate(R.id.action_signUpFrag_to_phoneValidation1Frag)
+        next_bt_siginUp.setOnClickListener {
+            navigation?.navigate(R.id.action_signUpFrag_to_recommendation1Frag)
 
 
         }

@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import br.com.app5m.appaps.R
+import kotlinx.android.synthetic.main.fragment_phone_validation1.*
+import kotlinx.android.synthetic.main.fragment_phone_validation2.*
 
 class PhoneValidation2Frag : Fragment() {
 
@@ -16,6 +19,15 @@ class PhoneValidation2Frag : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_phone_validation2, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        next_bt_vali2.setOnClickListener {
+            Navigation?.findNavController(view).navigate(R.id.action_phoneValidation2Frag_to_loginFrag)
+
+        }
     }
 
 

@@ -44,6 +44,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_siginInFrag_to_loginFrag"
+            app:destination="@id/loginFrag" />
     </fragment>
     <fragment
         android:id="@+id/signUpFrag"
@@ -51,12 +54,8 @@
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
-            android:id="@+id/action_signUpFrag_to_phoneValidation1Frag"
-            app:destination="@id/phoneValidation1Frag"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@android:anim/slide_in_left"
-            app:popExitAnim="@android:anim/slide_out_right" />
+            android:id="@+id/action_signUpFrag_to_recommendation1Frag"
+            app:destination="@id/recommendation1Frag" />
     </fragment>
     <fragment
         android:id="@+id/phoneValidation1Frag"
@@ -75,5 +74,56 @@
         android:id="@+id/phoneValidation2Frag"
         android:name="br.com.app5m.appaps.ui.fragment.PhoneValidation2Frag"
         android:label="fragment_phone_validation2"
-        tools:layout="@layout/fragment_phone_validation2" />
+        tools:layout="@layout/fragment_phone_validation2" >
+        <action
+            android:id="@+id/action_phoneValidation2Frag_to_loginFrag"
+            app:destination="@id/loginFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPassFrag"
+        android:name="br.com.app5m.appaps.ui.fragment.recoverPassFrag"
+        android:label="fragment_recover_pass"
+        tools:layout="@layout/fragment_recover_pass" >
+        <action
+            android:id="@+id/action_recoverPassFrag_to_loginFrag"
+            app:destination="@id/loginFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendation2Frag"
+        android:name="br.com.app5m.appaps.ui.fragment.Recommendation2Frag"
+        android:label="fragment_recommendation2"
+        tools:layout="@layout/fragment_recommendation2" >
+        <action
+            android:id="@+id/action_recommendation2Frag_to_phoneValidation1Frag"
+            app:destination="@id/phoneValidation1Frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/navBarFrag"
+        android:name="br.com.app5m.appaps.ui.fragment.NavBarFrag"
+        android:label="fragment_navbar"
+        tools:layout="@layout/fragment_navbar" />
+    <fragment
+        android:id="@+id/loginFrag"
+        android:name="br.com.app5m.appaps.ui.fragment.LoginFrag"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFrag_to_recoverPassFrag"
+            app:destination="@id/recoverPassFrag" />
+        <action
+            android:id="@+id/action_loginFrag_to_navBarFrag"
+            app:destination="@id/navBarFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendation1Frag"
+        android:name="br.com.app5m.appaps.ui.fragment.Recommendation1Frag"
+        android:label="fragment_recommendation1"
+        tools:layout="@layout/fragment_recommendation1" >
+        <action
+            android:id="@+id/action_recommendation1Frag_to_recommendation2Frag"
+            app:destination="@id/recommendation2Frag" />
+        <action
+            android:id="@+id/action_recommendation1Frag_to_phoneValidation1Frag"
+            app:destination="@id/phoneValidation1Frag" />
+    </fragment>
 </navigation>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".ui.fragment.recoverPassFrag">
 
     <!-- TODO: Update blank fragment layout -->
@@ -19,7 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="84dp"
-            android:text="Recuperar senha" />
+            android:text="Recuperar senha"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView14"
@@ -28,28 +30,49 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:maxLength="200"
-            android:text="Digite o seu endereço de email abaixo que enviaremos o email de redefinição." />
+            android:text="Digite o seu endereço de email abaixo que enviaremos o email de redefinição."
+            android:textColor="#FFFFFF" />
 
-        <TextView
-            android:id="@+id/textView16"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
-            android:textColor="@color/titleFields" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:ems="10"
-            android:inputType="textEmailAddress" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seu Email"
+                android:textColor="@color/titleFields" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextField"
+                style="@style/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#006C6C6C"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/recoverPass_bt"
             style="@style/bt16FontS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
             android:layout_marginBottom="24dp"
             android:text="Enviar" />
     </LinearLayout>

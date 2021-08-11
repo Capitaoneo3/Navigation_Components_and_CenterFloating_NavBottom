@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import br.com.app5m.appaps.R
 import kotlinx.android.synthetic.main.fragment_login.*
 
@@ -26,6 +27,11 @@ class LoginFrag : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         login_bt.setOnClickListener {
+            Navigation?.findNavController(view).navigate(R.id.action_loginFrag_to_navBarFrag)
+
+        }
+        recoverPass_tv.setOnClickListener {
+            Navigation?.findNavController(view).navigate(R.id.action_loginFrag_to_recoverPassFrag)
 
 
         }

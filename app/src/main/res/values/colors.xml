@@ -33,6 +33,7 @@
     <color name="iconTintHomeNavBar">#FFFFFF</color>
     <!--DIVIDER-->
     <color name="divider1">#797A7D</color>
+    <color name="divider2">#000000</color>
 
     <!--DEFAULT-->
     <!--line textinput-->

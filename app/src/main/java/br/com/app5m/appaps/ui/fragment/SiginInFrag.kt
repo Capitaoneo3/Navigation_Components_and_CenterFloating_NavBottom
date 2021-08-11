@@ -24,10 +24,15 @@ class SiginInFrag : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navigation = Navigation.findNavController(view)
+
         siginUp_email_bt.setOnClickListener {
-             navigation = Navigation.findNavController(view)
             navigation?.navigate(R.id.action_siginInFrag_to_signUpFrag)
         }
+        login_signin_tv.setOnClickListener {
+                navigation?.navigate(R.id.action_siginInFrag_to_loginFrag)
+            }
+
     }
 
 }

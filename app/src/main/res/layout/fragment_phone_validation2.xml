@@ -9,43 +9,6 @@
     >
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.18">
-
-        <com.fraggjkee.smsconfirmationview.SmsConfirmationView
-            android:id="@+id/sms_code_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:gravity="center"
-            app:scv_smsDetectionMode="disabled"
-            app:scv_symbolBackgroundColor="#79000000"
-            app:scv_symbolBorderColor="@color/white"
-            app:scv_symbolBorderWidth="0dp"
-            app:scv_symbolHeight="80dp"
-            app:scv_symbolTextSize="15sp"
-            app:scv_symbolWidth="70dp"
-            app:scv_symbolsSpacing="10dp" />
-
-        <Button
-            android:id="@+id/next_bt_vali2"
-            style="@style/bt16FontS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="36dp"
-            android:backgroundTint="@color/buttonDefault1"
-            android:text="Avançar" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998">
+        app:layout_constraintVertical_bias="0.18">
 
         <TextView
             android:id="@+id/textView8"
@@ -75,4 +38,84 @@
             android:textColor="#7EECCB" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.26999998">
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/fontBodyIntroSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="1"
+            android:text="Cheque seu SMS."
+            android:textColor="#FFFFFF" />
+
+        <com.fraggjkee.smsconfirmationview.SmsConfirmationView
+            android:id="@+id/sms_code_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:scv_symbolBackgroundColor="#79000000"
+            app:scv_symbolBorderColor="@color/white"
+            app:scv_symbolBorderWidth="0dp"
+            app:scv_symbolHeight="80dp"
+            app:scv_symbolTextSize="15sp"
+            app:scv_symbolWidth="70dp"
+            app:scv_symbolsSpacing="10dp">
+
+        </com.fraggjkee.smsconfirmationview.SmsConfirmationView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password">
+
+            <TextView
+                style="@style/fontBodyIntroSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Não recebeu?"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                style="@style/fontBodyIntroSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="Reenviar"
+                android:textColor="#256CFE" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_bt_vali2"
+            style="@style/bt16FontS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/buttonDefault1"
+            android:text="Avançar" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

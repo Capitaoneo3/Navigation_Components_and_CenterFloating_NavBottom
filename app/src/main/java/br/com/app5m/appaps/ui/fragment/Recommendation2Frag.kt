@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -29,9 +30,19 @@ class Recommendation2Frag : Fragment(),RecyclerItemClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         configureInitialViews()
+        next_bt_reco2.setOnClickListener {
+                Navigation?.findNavController(view).navigate(R.id.action_recommendation2Frag_to_phoneValidation1Frag)
+
+            }
 
     }
     fun configureInitialViews() {
+        listSellers.add(Seller())
+        listSellers.add(Seller())
+        listSellers.add(Seller())
+        listSellers.add(Seller())
+        listSellers.add(Seller())
+        listSellers.add(Seller())
         listSellers.add(Seller())
         listSellers.add(Seller())
         listSellers.add(Seller())

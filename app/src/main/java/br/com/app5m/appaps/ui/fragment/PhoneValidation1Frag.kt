@@ -23,6 +23,7 @@ class PhoneValidation1Frag : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         next_bt_vali1.setOnClickListener {
             Navigation?.findNavController(view).navigate(R.id.action_phoneValidation1Frag_to_phoneValidation2Frag)
 

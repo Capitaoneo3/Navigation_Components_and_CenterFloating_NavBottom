@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     >
-
     <item
-        android:id="@+id/perfil"
-        android:icon="@drawable/ic_perfil"
+        android:id="@+id/help"
+        android:icon="@drawable/ic_baseline_search_24"
         android:title="" />
-
     <item
-        android:id="@+id/umbrella"
-        android:icon="@drawable/ic_umbrella"
+        android:id="@+id/voucher"
+        android:icon="@drawable/ic_noun_voucher_1162069"
         android:title="" />
-
     <item
         android:id="@+id/home"
         android:iconTint="@color/white"
         android:title="" />
-
     <item
-        android:id="@+id/help"
-        android:icon="@drawable/ic_help"
+        android:id="@+id/perfil"
+        android:icon="@drawable/ic_perfil"
         android:title="" />
 
     <item

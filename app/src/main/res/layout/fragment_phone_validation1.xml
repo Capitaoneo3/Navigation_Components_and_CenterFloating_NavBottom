@@ -59,7 +59,7 @@
             android:textColor="#797A7D " />
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/textInputSignUp"
+            style="@style/textInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
