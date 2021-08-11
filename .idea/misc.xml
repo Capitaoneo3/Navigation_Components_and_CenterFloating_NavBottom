@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/drawable/decor_shape_no_bg.xml" value="0.10625" />
         <entry key="app/src/main/res/drawable/ic_arrow6x12.xml" value="0.2328125" />
         <entry key="app/src/main/res/drawable/ic_facebook2.xml" value="0.14703947368421053" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.10625" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2328125" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14703947368421053" />
         <entry key="app/src/main/res/drawable/item_decoration_layout_no_bg.xml" value="0.1450657894736842" />
@@ -22,7 +23,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/adapter_sellers.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_frist.xml" value="0.32916666666666666" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1174342105263158" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.1852355072463768" />
         <entry key="app/src/main/res/layout/fragment_intro1.xml" value="0.12" />
         <entry key="app/src/main/res/layout/fragment_intro2.xml" value="0.15" />
@@ -40,6 +41,7 @@
         <entry key="app/src/main/res/layout/fragment_teste.xml" value="0.32916666666666666" />
         <entry key="app/src/main/res/layout/intro_layer.xml" value="0.18206521739130435" />
         <entry key="app/src/main/res/layout/searchbar.xml" value="0.1174342105263158" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
       </map>
     </option>
   </component>

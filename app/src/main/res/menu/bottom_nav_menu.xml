@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="" />
+
+    <item
+        android:id="@+id/umbrella"
+        android:icon="@drawable/ic_umbrella"
+        android:title="" />
+
+    <item
+        android:id="@+id/home"
+        android:iconTint="@color/white"
+        android:title="" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help"
+        android:title="" />
+
+    <item
+        android:id="@+id/notify"
+        android:icon="@drawable/ic_notify"
+        android:title="" />
+
+</menu>

@@ -1,4 +1,4 @@
-package br.com.app5m.appaps.ui.fragment.ui.login
+package br.com.app5m.appaps.ui.fragment
 
 
 import androidx.fragment.app.Fragment
@@ -11,7 +11,7 @@ import br.com.app5m.appaps.R
 import kotlinx.android.synthetic.main.fragment_login.*
 
 
-class LoginFragment : Fragment() {
+class LoginFrag : Fragment() {
 
 
     override fun onCreateView(
