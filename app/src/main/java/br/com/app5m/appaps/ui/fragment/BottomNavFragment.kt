@@ -12,6 +12,7 @@ import br.com.app5m.appaps.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import br.com.app5m.appaps.BackButtonBehaviour.POP_HOST_FRAGMENT
 import br.com.app5m.appaps.setupWithNavController
+import kotlinx.android.synthetic.main.fragment_bottom_nav.*
 
 
 class BottomNavFragment : Fragment() {
@@ -45,10 +46,16 @@ class BottomNavFragment : Fragment() {
     }
 
     private fun setupBottomNavBar(view: View) {
+
+
         val bottomNavView = view.findViewById<BottomNavigationView>(R.id.bottom_nav_view)
         val toolbar = view.findViewById<Toolbar>(R.id.bottom_nav_toolbar)
         // Your navGraphIds must have the same ids as your menuItem ids
         val navGraphIds = listOf(R.navigation.search,R.navigation.voucher, R.navigation.home, R.navigation.perfil,R.navigation.notify)
+
+        fab.setOnClickListener {
+            bottomNavView.selectedItemId=R.id.home
+        }
 
         addToolbarListener(toolbar)
         bottomNavView.selectedItemId = bottomNavSelectedItemId // Needed to maintain correct state on return
